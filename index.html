@@ -397,6 +397,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-box-third">
+          <p class="subscribe-text">Підпишіться на розсилку</p>
+          <div class="subscribe-container">
+            <form name="subscribe-form">
+              <label class="subscribe-label" for="subscribe"></label>
+              <input
+                class="subscribe-input"
+                type="email"
+                id="subscribe"
+                name="subscribe"
+                placeholder="E-mail"
+              />
+            </form>
+            <button class="subscribe-button primary-button" type="submit">
+              Підписатися
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -441,19 +462,21 @@
               placeholder="Введіть текст"
             ></textarea>
 
-            <input
-              class="checkbox-input visually-hidden"
-              id="terms-checkbox"
-              type="checkbox"
-              name="terms-checkbox"
-            />
-            <svg class="checkbox-icon">
-              <use href="./images/icons.svg/symbol-defs.svg#icon-icon-check"></use>
-            </svg>
-            <label class="checkbox-label" for="terms-checkbox">
-              Погоджуюся з розсилкою та приймаю
-              <a class="" href="#">Умови договору</a>
-            </label>
+            <div class="contract-container">
+              <input
+                class="checkbox-input visually-hidden"
+                id="terms-checkbox"
+                type="checkbox"
+                name="terms-checkbox"
+              />
+              <svg class="checkbox-icon" width="16" height="15">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-icon-check"></use>
+              </svg>
+              <label class="checkbox-label" for="terms-checkbox">
+                Погоджуюся з розсилкою та приймаю
+                <a class="contract-link" href="#">Умови договору</a>
+              </label>
+            </div>
 
             <button class="form-button primary-button" type="submit">Відправити</button>
           </form>
